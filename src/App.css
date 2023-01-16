@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+body {
+  /*background-image: url("https://tinyurl.com/456c3sx2");*/
+  background-image: url("https://tinyurl.com/3ce8tsrr");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.title-heading {
+  text-align: center;
+  padding: 5px;
+  padding-top: 15px;
+  text-decoration: underline;
+  font-size: 3.5rem;
+}
+
+h3  {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+.drum-machine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  max-width: 600px;
+  justify-content: center;
+  background-color: #1D1E22;
+  padding: clamp(10px, 20px, 30px);
+  border-radius: 10px;
+}
+.control-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  order: 2;
+  min-width: 270px;
+}
+.drum-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  min-width: 270px;
+  order: 1;
+}
+.drum-pad {
+  font-weight: 600;
+}
+span {
+  background-color: brown;
+  margin-left: 10px;
+  padding: 6px 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+}
+.mode-display {
+  border-radius: 5px;
+}
+.vol-control {
+  height: 1px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #d3d3d3; 
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.vol-control::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 5px; 
+  height: 25px; 
+  background: #04AA6D; 
+  cursor: pointer;
+}
+
+.vol-control::-moz-range-thumb {
+  width: 5px; 
+  height: 25px; 
+  background: #04AA6D; 
+  cursor: pointer;
+}
+.switch-btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px gray;
+}
+@media only screen and (max-width: 600px) {
+  .title-heading {
+    padding: 0;
+  }
+  .drum-machine {
+    flex-wrap: wrap;
+  }
+  .control-container {
+    min-height: 200px;
+  }
+}
